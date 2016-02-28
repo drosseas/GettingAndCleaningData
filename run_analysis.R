@@ -90,4 +90,4 @@ tidy_data    = aggregate(final_data_no_type[,names(final_data_no_type) != c('act
 tidy_data    = merge(tidy_data,activity_label,by='activityId',all.x=TRUE);
 
 # Export the tidydataset 
-write.table(tidy_data, './tidyData.txt',row.names=TRUE,sep='\t');
+write.table(tidy_data, './tidy_data.txt',row.names=TRUE,sep='\t');
